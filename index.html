@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduLearn - Start Learning Today!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581092919535-8fc30f3c221b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+      padding: 120px 0;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+    .category-box, .card {
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+    .category-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #0d6efd;
+    }
+    .btn-primary {
+      background-color: #0d6efd;
+      border: none;
+    }
+        #contact {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #333;
+        color: white;
+    }
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .conitem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">UCourses</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Start Learning Today!</h1>
+      <p class="lead">Join thousands of learners and expand your knowledge from anywhere.</p>
+      <a href="#courses" class="btn btn-primary btn-lg mt-3">Browse Courses</a>
+    </div>
+  </section>
+
+  <!-- Course Categories -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Course Categories</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="category-box">
+            <div class="category-icon">💻</div>
+            <h5>Programming</h5>
+            <p>Learn Python, JavaScript, and more with hands-on projects.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-box">
+            <div class="category-icon">📊</div>
+            <h5>Data Science</h5>
+            <p>Master data analysis, visualization, and machine learning.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-box">
+            <div class="category-icon">🎨</div>
+            <h5>Design</h5>
+            <p>Explore graphic design, UX/UI, and creative tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Courses -->
+  <section id="courses" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Featured Courses</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/images.jpeg" class="card-img-top" alt="Course">
+            <div class="card-body">
+              <h5 class="card-title">Intro to Python</h5>
+              <p class="card-text">Instructor: Sarah Ahmed</p>
+              <a href="#" class="btn btn-primary">Enroll</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/course_thumbnail_default-new_41708363662.jpg" class="card-img-top" alt="Course">
+            <div class="card-body">
+              <h5 class="card-title">Web Development Bootcamp</h5>
+              <p class="card-text">Instructor: Ali Hassan</p>
+              <a href="#" class="btn btn-primary">Enroll</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/images.png" class="card-img-top" alt="Course">
+            <div class="card-body">
+              <h5 class="card-title">Data Analysis with Excel</h5>
+              <p class="card-text">Instructor: Mona Khaled</p>
+              <a href="#" class="btn btn-primary">Enroll</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="contact" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="mb-4 text-center">Contact Me</h2>
+      <div class="row justify-content-center ">
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item bg-dark text-white">
+              <i class="material-icons-outlined me-2">email</i>
+              <a href="mailto:myara1405@gmail.com">myara1405@gmail.com</a>
+            </li>
+            <li class="list-group-item bg-dark text-white">
+              <i class="material-icons-outlined me-2">phone</i>
+              01118875243
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Yara Mohamed. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
